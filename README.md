@@ -1,3 +1,3 @@
 # CodeWithUs
 
-### Have a look our Live site https://coffeewithdevs.github.io/CodeWithUs/
+### Do have a look of our Live site https://coffeewithdevs.github.io/CodeWithUs/

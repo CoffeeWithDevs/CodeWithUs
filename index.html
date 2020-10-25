@@ -4,6 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code With Us</title>
+    <link rel="stylesheet" href="./public/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="brand"><a href="#">Code with Us</a></div>
+      <div class="nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#aboutus">About</a></li>
+          <li><a href="#contactus">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="showcase">
+      <div class="container">
+        <div class="secHead">
+          <h1>Code With US</h1>
+          <p>
+            Code with US is an Organisation for university students who want to
+            bring about a change through technology. We are focused upon
+            building technical and non-technical skills, which would help
+            students to build a better community. # Lets Learn, Grow and
+            Innovate together.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="aboutus">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>
+          Elevate Lab is an Organisation for university students who
+          Collaboratively wants to bring about a change through technology. We
+          Believe In Contributing Towards The Betterment Of Society Through
+          Technology . Anyone is welcome here for contributing and to learn Open
+          Source
+        </p>
+      </div>
+    </div>
+
+    <div class="contact" id="contactus">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <div class="wrapper animated zoomIn">
+          <!-- class = "animated bounceInLeft" -->
+          <div class="company-info">
+            <h3>Coffee with Devs</h3>
+          </div>
+          <div class="contact">
+            <h3>Email Us</h3>
+            <form id="contactform">
+              <p>
+                <label>Name</label>
+                <input type="text" name="name" id="name" />
+              </p>
+              <p>
+                <label>Company</label>
+                <input type="text" name="company" id="company" />
+              </p>
+              <p>
+                <label>Email Address</label>
+                <input type="email" name="email" id="email" />
+              </p>
+              <p>
+                <label>Phone Nmber</label>
+                <input type="text" name="phoneNumber" id="phone" />
+              </p>
+              <p class="full">
+                <label>Message</label>
+                <textarea name="message" rows="5" id="message"></textarea>
+              </p>
+              <p class="full">
+                <button type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>
+          All Rights Reserved | Copyright &copy;
+          <strong>Coffee with Devs'20</strong>
+        </p>
+      </div>
+    </footer>
+
+    <script src="public/js/main.js"></script>
+  </body>
 </html>

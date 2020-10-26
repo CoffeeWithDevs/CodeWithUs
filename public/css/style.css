@@ -35,6 +35,14 @@ header {
   z-index: 999;
 }
 
+.cnt{
+  display: flex;
+  flexwrap: wrap;
+  justify-content: center;
+}
+
+
+
 .container {
   width: 80%;
   margin: auto;

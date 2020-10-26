@@ -191,6 +191,7 @@ p {
   width: 100%;
   padding: 1em;
   border: 1px solid #555;
+  box-sizing: border-box;
 }
 
 .contact form button {
@@ -206,6 +207,18 @@ p {
   color: #fff;
   transition: background-color 2s ease-out;
 }
+
+@media (max-width: 768px) {
+  .contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .full {
+    grid-column: 1;
+  }
+}
+
 
 /* contact end */
 

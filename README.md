@@ -5,7 +5,7 @@
 #### Please Star the Repo :smiley:
 
 #### Join our whatsapp group for any query https://chat.whatsapp.com/FMj6QbsqlMy8Td9o2kA44g
-#### Also feel free to mail us at manish15052000@gmail.com kundanbhasin11062000@gmail.com 
+#### Also feel free to mail us at manish15052000@gmail.com kundanbhasin11062000@gmail.com  shivamagrahari5999@gmail.com
 
 
 
@@ -69,7 +69,7 @@ We will follow the official GitHub documentation for setting up the repo.
   - Pull request means submitting your changes to the original project for the review. Once the maintainers of the project feel that your changes are appropriate then your pull request will be merged.
 
 * Add relevant commit message in the pr, mention issue number and live link to comment while making pr.
-* **Note**: In case you feel any issue during setting up the project or using git, don't hesitate to ask us on our slack channel. We will help you out.
+* **Note**: In case you feel any issue during setting up the project or using git, don't hesitate to ask us on our what's app group or via mail. We will help you out.
 
 ## Guidelines and Best practices
 
@@ -91,6 +91,6 @@ Please help us follow the best practice to make it easy for the reviewer as well
 
 - Be polite: Be polite to other community members.
 
-- Communicate: Whether you are working on a new feature or facing a doubt please feel free to ask us on our slack channel. We will be happy to help you out.
+- Communicate: Whether you are working on a new feature or facing a doubt please feel free to ask us on our what'sapp group or via mail. We will be happy to help you out.
 
 ### Happy Coding :v:

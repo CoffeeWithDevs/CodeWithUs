@@ -52,38 +52,28 @@ header {
   color: black;
 }
 
-.nav {
-  float: right;
-  margin-top: 15px;
-  margin-right: 30px;
-}
-
-.nav li {
-  display: inline;
-  padding: 8px;
-  min-height: 70px !important;
+.nav-btn {
   background-color: #555;
-  color: white !important;
-  margin: 0px 10px;
+  margin: 0 10px;
   border-radius: 20px;
+  padding: 0 20px;
   font-weight: bold;
+  border: 1px solid #555;
 }
 
-.nav li:hover {
-  color: #555 !important;
+.nav-btn:hover {
   background-color: white;
+  color: black;
   border: 1px solid black;
 }
 
-.nav a:hover {
-  color: #555;
+.nav-link {
+  color: white !important; 
+  padding: 3px;
 }
 
-.nav a {
-  display: inline-block;
-  color: white;
-  width: 80px;
-  text-align: center;
+.nav-link:hover {
+  color: #555 !important;
 }
 
 .showcase {
@@ -134,7 +124,7 @@ header {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
-  margin: auto;
+  margin: 100px auto 0;
   text-align: center;
   font-family: arial;
 }
@@ -505,3 +495,4 @@ footer {
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
+

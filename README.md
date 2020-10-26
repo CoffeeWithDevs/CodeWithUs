@@ -10,12 +10,6 @@
 
 
 ## RULES
-- To be eligible for the prizes all participants must submit a minimum of 4 PR’s in the GeektoberFest'20 repositories.
-
-- Since we have limited repos and we want everyone to get the chance to contribute, **participants cannot submit more than 6 PRs to the GeektoberFest'20 repositories**.
-
-- After submission of the PR’s on the GeektoberFest'20 repositories (Min 4 and Max 6) participants can keep contributing to other open source projects to become the best contributors and win additional prizes.
-
 - **After every Pull Request of yours that gets merged, you have to add its details to your contribution JSON file so that we can keep track of your contributions. Instructions on how to add PR details are given below**
 
 

@@ -1,230 +1,293 @@
 /* index CSS */
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oleo+Script&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background-image: linear-gradient(to right bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
 }
 
 header {
-  position: fixed;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: auto;
-  width: 100%;
-  padding: 5px 0;
-  z-index: 999;
+    position: sticky;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+    width: 100%;
+    padding: 5px 0;
+    z-index: 999;
 }
 
 .container {
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
 .brand {
-  font-family: "Oleo Script", cursive;
-  font-size: 35px;
-  cursor: pointer;
-  display: inline-block;
-  margin-left: 50px;
+    font-family: "Oleo Script", cursive;
+    font-size: 35px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 50px;
 }
 
 .brand a {
-  color: black;
+    color: black;
 }
 
 .nav {
-  float: right;
-  margin-top: 15px;
-  margin-right: 30px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 30px;
 }
 
 .nav li {
-  display: inline;
-  padding: 8px;
-  min-height: 70px !important;
-  background-color: #555;
-  color: white !important;
-  margin: 0px 10px;
-  border-radius: 20px;
-  font-weight: bold;
+    display: inline;
+    padding: 8px;
+    min-height: 70px !important;
+    background-color: #555;
+    color: white !important;
+    margin: 0px 10px;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
 .nav li:hover {
-  color: #555 !important;
-  background-color: white;
-  border: 1px solid black;
+    color: #555 !important;
+    background-color: white;
+    border: 1px solid black;
 }
 
 .nav a:hover {
-  color: #555;
+    color: #555;
 }
 
 .nav a {
-  display: inline-block;
-  color: white;
-  width: 80px;
-  text-align: center;
+    display: inline-block;
+    color: white;
+    width: 80px;
+    text-align: center;
 }
 
 .showcase {
-  background: url(../img/showcase1.jpg) no-repeat center/cover;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
+    background: url(../img/showcase1.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 .secHead {
-  margin-top: 200px;
-  color: white;
-  width: 50%;
+    margin-top: 200px;
+    color: white;
+    width: 50%;
 }
 
 .secHead h1 {
-  font-size: 40px;
-  margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
 .secHead p {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .about {
-  width: 100%;
-  height: 60vh;
-  padding-top: 50px;
+    width: 100%;
+    height: 60vh;
+    padding-top: 50px;
 }
 
 .about h1 {
-  text-align: center;
-  width: 100%;
-  padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
 }
 
 .about p {
-  font-size: 20px;
-  width: 70%;
-  margin: auto;
-  text-align: center;
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
 }
 
+
 /* index end */
+
 
 /* profile CSS */
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
 }
 
 #about {
-  color: grey;
-  font-size: 18px;
+    color: grey;
+    font-size: 18px;
 }
 
+
 /* profile css */
+
 
 /* Contact */
 
 .contact h1 {
-  text-align: center;
-  width: 100%;
-  padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
 }
 
 .wrapper {
-  box-shadow: 0 0 20px 0 #555;
+    box-shadow: 0 0 20px 0 #555;
 }
 
-.wrapper > * {
-  padding: 1em;
+.wrapper>* {
+    padding: 1em;
 }
 
 .company-info {
-  text-align: center;
-  background: #555;
+    text-align: center;
+    background: #555;
 }
 
 .contact {
-  background: #fff;
+    background: #fff;
 }
 
 .contact form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .full {
-  grid-column: 1/3;
+    grid-column: 1/3;
 }
 
 .contact form label {
-  display: block;
+    display: block;
 }
 
 p {
-  margin: 0px;
+    margin: 0px;
 }
 
 .contact form input,
 .contact form textarea,
 .contact form button {
-  width: 100%;
-  padding: 1em;
-  border: 1px solid #555;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #555;
 }
 
 .contact form button {
-  background: #555;
-  border: none;
-  padding: 1em;
-  text-transform: uppercase;
+    background: #555;
+    border: none;
+    padding: 1em;
+    text-transform: uppercase;
 }
 
 .contact form button:hover,
 .contact form button:focus {
-  background: #555;
-  color: #fff;
-  transition: background-color 2s ease-out;
+    background: #555;
+    color: #fff;
+    transition: background-color 2s ease-out;
 }
+
 
 /* contact end */
 
+
 /* team */
 
-.team {
-  height: 100vh;
+
+/* .team {
+    height: 100vh;
+} */
+
+.row {
+    background: #f1f100;
+    width: 80%;
+    margin: 1% auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+.col {
+    flex-basis: 25%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.col img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 61%;
+}
+
+.col p {
+    margin: 20px 0px;
+}
+
+.social-link .fa {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid black;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.social-link .fa:hover {
+    background: #000000;
+    color: #ffe501;
+    transform: translateY(-7px);
+}
+
+.col:hover img {
+    transform: scale(1.1);
+}
+
+.col span {
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #ffe501;
+    top: 0;
+    left: 0;
+}
+
 
 /* footer  */
 
 footer {
-  color: white;
-  background-color: #222;
-  margin-top: 100px;
+    color: white;
+    background-color: #222;
+    margin-top: 100px;
 }
 
 footer p {
-  width: 100%;
-  padding: 50px;
-  text-align: center;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
 }

@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code With Us</title>
     <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
-      <div class="brand"><a href="#">Code with Us</a></div>
-      <div class="nav">
-        <ul>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <div class="brand"><a href="#">Code with Us</a></div>
+        <ul class="main-nav" id="js-menu">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./team.html">Team</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#aboutus">About</a></li>
           <li><a href="#contactus">Contact</a></li>
         </ul>
-      </div>
+    </nav>
     </header>
-    <div class="showcase">
+    <div class="showcase" id="home">
       <div class="container">
         <div class="secHead">
           <h1>Code With US</h1>
@@ -33,6 +40,13 @@
         </div>
       </div>
     </div>
+
+    <section id="section4">
+      <h2>participants</h2>
+      <div id="participants-container" class="row participants-container">
+        <!-- participants rendered from main.js -->
+      </div>
+    </section>
 
     <div class="about" id="aboutus">
       <div class="container">
@@ -87,12 +101,55 @@
       </div>
     </div>
 
-    <footer>
-      <div class="container">
-        <p>
-          All Rights Reserved | Copyright &copy;
-          <strong>Coffee with Devs'20</strong>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3><span>Code with Us</span></h3>
+
+        <p class="footer-links">
+          <a href="#home">Home</a>
+          |
+          <a href="./team.html">Team</a>
+          |
+          <a href="#aboutus">About</a>
+          |
+          <a href="#contactus">Contact</a>
         </p>
+
+        <p class="footer-company-name">© 2020 Code With Us.</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>
+            <span>Delhi</span>
+            <!--Add your location here-->
+          </p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 XXXXXXXXXX</p>
+          <!--Add your contact number-->
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:emailhere@abc.com">emailhere@abc.com</a></p>
+          <!--Add You MailID after mailto:-->
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Code with US is an Organisation for university students who want to
+          bring about a change through technology.
+        </p>
+        <div class="footer-icons">
+          <a href="/"><i class="fa fa-facebook"></i></a>
+          <!--Add Social Links Here-->
+          <a href="/"><i class="fa fa-instagram"></i></a>
+          <a href="/"><i class="fa fa-linkedin"></i></a>
+        </div>
       </div>
     </footer>
 

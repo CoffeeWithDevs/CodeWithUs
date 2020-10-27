@@ -52,18 +52,6 @@ header {
   color: black;
 }
 
-<<<<<<< HEAD
-.nav-btn {
-  background-color: #555;
-  margin: 0 10px;
-  border-radius: 20px;
-  padding: 0 20px;
-  font-weight: bold;
-  border: 1px solid #555;
-}
-
-.nav-btn:hover {
-=======
 .navbar {
   font-size: 16px;
   background: white;
@@ -78,21 +66,10 @@ header {
 
 .main-nav li:hover {
   color: #555 !important;
->>>>>>> 1c2023d6f908a5b119a487a9babf4d349aef0ab9
   background-color: white;
-  color: black;
   border: 1px solid black;
 }
 
-<<<<<<< HEAD
-.nav-link {
-  color: white !important; 
-  padding: 3px;
-}
-
-.nav-link:hover {
-  color: #555 !important;
-=======
 .main-nav a:hover {
   color: #555;
 }
@@ -164,7 +141,6 @@ header {
   .nav-links:hover {
       color: rgba(255, 255, 255, 1);
   }
->>>>>>> 1c2023d6f908a5b119a487a9babf4d349aef0ab9
 }
 
 .showcase {
@@ -215,7 +191,7 @@ header {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
-  margin: 100px auto 0;
+  margin: auto;
   text-align: center;
   font-family: arial;
 }
@@ -586,4 +562,3 @@ footer {
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
-

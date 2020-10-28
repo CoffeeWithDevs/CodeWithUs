@@ -1,6 +1,6 @@
 /* index CSS */
 
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oleo+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -326,14 +326,8 @@ footer {
 
 .footer-distributed h3 {
   color: #ffffff;
-  font: normal 36px "Cookie", cursive;
+  font-weight: bold;
   margin: 0;
-}
-
-/* The company logo */
-
-.footer-distributed h3 span {
-  color: #54d16b;
 }
 
 /* Footer links */

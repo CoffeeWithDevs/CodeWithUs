@@ -392,6 +392,8 @@ footer {
 .footer-distributed .footer-center p a {
   color: #54d16b;
   text-decoration: none;
+  display:block;
+  line-height: 1.5;
 }
 
 /* Footer Right */

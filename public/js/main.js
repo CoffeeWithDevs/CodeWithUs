@@ -1,7 +1,7 @@
 let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById("js-navbar-toggle");
 
-navBarToggle.addEventListener("click", function() {
+navBarToggle.addEventListener("click", function () {
   mainNav.classList.toggle("active");
 });
 
@@ -36,16 +36,6 @@ function getDetails(data) {
   image.src = obj.imageurl;
   fbLink.href = obj.facebook;
   gitLink.href = obj.github;
-
-  let text, fLen, i;
-  let prs = obj.prs;
-  fLen = prs.length;
-
-  text = "<ul>";
-  for (i = 0; i < fLen; i++) {
-    text += "<li>" + prs[i] + "</li>";
-  }
-  text += "</ul>";
 
   document.getElementById("demo").innerHTML = text;
   title.innerHTML = name.innerHTML + " | Code With Us";

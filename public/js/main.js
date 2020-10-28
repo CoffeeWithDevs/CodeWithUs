@@ -44,7 +44,7 @@ function getDetails(data) {
   title.innerHTML = name.innerHTML + " | Code With Us";
 }
 
-//code for fetching participants from json files in contributions folder
+//code for fetching participants from json files in contributionsfolder
 
 const githubApiUrl =
   "https://api.github.com/repos/CoffeeWithDevs/CodeWithUs/commits/main";
@@ -57,10 +57,11 @@ fetch(githubApiUrl)
   .then((res) => res.json())
   .then((data) => {
     const treeUrl = data.commit.tree.url;
+
     fetch(treeUrl)
       .then((treeRes) => treeRes.json())
       .then((treeData) => {
-        const contributionsUrl = treeData.tree[2].url;
+        const contributionsUrl = treeData.tree[1].url;
         fetch(contributionsUrl)
           .then((contributionsRes) => contributionsRes.json())
           .then((contributionsData) => {

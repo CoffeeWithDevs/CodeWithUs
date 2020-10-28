@@ -405,7 +405,7 @@ footer {
 
 /* Participants Section Starts */
 
-#section4 {
+/* #section4 {
   color: #555555;
   font-family: "Nunito", sans-serif;
   padding: 50px 100px;
@@ -413,6 +413,19 @@ footer {
 }
 
 #section4 h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+} */
+
+#section4 {
+  width: 100%;
+  padding-top: 50px;
+}
+
+#section4 h1 {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }

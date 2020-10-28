@@ -1,28 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="title"></title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fa fa-bars"></i>
-        </span>
-        <div class="brand"><a href="#">Code with Us</a></div>
-        <ul class="main-nav" id="js-menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./team.html">Team</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#aboutus">About</a></li>
-          <li><a href="#contactus">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="title"></title>
+
+  <!-- Bootstrap-Style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Bootstrap-Social-Style -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-social.css" />
+
+  <script src="https://use.fontawesome.com/e505f97a56.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars"></i>
+      </span>
+      <div class="brand"><a href="#">Code with Us</a></div>
+      <ul class="main-nav" id="js-menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./team.html">Team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#aboutus">About</a></li>
+        <li><a href="#contactus">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container" style="height: 100vh; padding:5%;">
+    <div class="row align-items-center" style="height: 100vh;">
+      <div class="col-12 col-sm-6">
+        <div class="media">
+          <img id="userImg" class="d-flex mr-3 img-thumbnail " src="./assets/img/profileimage.png" alt=""
+            style="width: 100%;">
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="media-body">
+          <div class="card">
+            <div class="card-body">
+
+              <h2 class="mt-0 card-title">Neolo Buau</h2>
+              <hr>
+              <h6 class="card-subtitle mb-2 text-muted">I’m a Designer, based out of U.S.A.
+              </h6>
+              <hr>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Sit amet mauris commodo quis. Ut faucibus pulvinar
+                elementum integer enim neque volutpat ac tincidunt. Lorem ipsum dolor sit amet consectetur adipiscing.
+                Facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris.</p>
+
+              <div style="margin: 20px 0">
+                <a class="btn btn-social-icon btn-github">
+                  <span class="fab fa-github"></span>
+                </a>
+                <a class="btn btn-social-icon btn-twitter">
+                  <span class="fab fa-twitter"></span>
+                </a>
+                <a class="btn btn-social-icon btn-facebook">
+                  <span class="fab fa-facebook"></span>
+                </a>
+              </div>
+
+            </div>
+            <p> <a role="button" class="btn btn-block btn-dark" href="mailto:codewithus@.net"><i
+                  class="fa fa-envelope"></i>
+                Email</a></p>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- <div class="container">
       <br />
       <div class="card">
         <img id="userImg" src="" alt="" style="width: 100%" />
@@ -35,9 +96,10 @@
         </div>
       </div>
     </div>
-    <br />
+    <br /> -->
 
     <script src="assets/js/profile.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </body>
+</body>
+
 </html>

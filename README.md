@@ -1,3 +1,5 @@
+# CodeWithUs
+
 <img src="logo/logo.png" height="48">
 
 _We believe in contributing. Let's learn, grow and innovate together._
@@ -40,4 +42,3 @@ We are a leading Open Source Organisation helping University Students to grow in
 
 </p>
 
-# CodeWithUs

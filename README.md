@@ -10,7 +10,7 @@ Do have a look at our Live Site. Visit https://coffeewithdevs.github.io/CodeWith
 
 We are a leading Open Source Organisation helping University Students to grow in their programming career. We focus upon building the technical as well as the non-technical skills, which would help students make better community.
 
-##_Please Star our Repo :smiley:_
+## _Please Star our Repo :smiley:_
 
 ## How To Contribute
 

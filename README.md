@@ -10,6 +10,14 @@ We are a leading Open Source Organisation helping University Students to grow in
 
 Do have a look at our Live Site. Visit `https://coffeewithdevs.github.io/CodeWithUs/`.
 
+## How To Contribute
+
+1. Fork this repo into your github account.
+2. Clone that forked repo to your local computer.
+3. Do suitable changes.
+4. Push changes to your remote repo.
+5. Compare and create a pull request, usually known as PR. _(Describe your changes in brief in the comment section.)_
+
 _Please Star our Repo :smiley:_
 
 **Join our Whatsapp Group for any query, click `https://chat.whatsapp.com/FMj6QbsqlMy8Td9o2kA44g`.**

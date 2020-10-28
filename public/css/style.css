@@ -20,7 +20,7 @@ ul {
 }
 
 body {
-  font-family: 'FontAwesome', sans-serif;
+  font-family: "FontAwesome", sans-serif;
   line-height: 1.6;
   font-size: 16px;
 }
@@ -113,33 +113,33 @@ header {
 
 @media screen and (min-width: 900px) {
   .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
   .nav-links {
-      margin-left: 40px;
+    margin-left: 40px;
   }
 
   .logo {
-      margin-top: 0;
+    margin-top: 0;
   }
 
   .navbar-toggle {
-      display: none;
+    display: none;
   }
 
   .logo:hover,
   .nav-links:hover {
-      color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
   }
 }
 
@@ -575,3 +575,26 @@ footer {
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
+
+/* Mentors Section Begins */
+
+#section6 {
+  width: 100%;
+  padding-top: 50px;
+}
+
+#section6 h2 {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.mentors-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+/* Mentors Section Ends */

@@ -5,8 +5,6 @@ navBarToggle.addEventListener("click", function () {
   mainNav.classList.toggle("active");
 });
 
-const userDisplay = document.getElementById("demo");
-
 let text = "";
 
 let params = new URLSearchParams(document.location.search.substring(1));

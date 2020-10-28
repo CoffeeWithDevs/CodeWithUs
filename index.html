@@ -14,17 +14,18 @@
     <header>
       <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fa fa-bars"></i>
+          <i class="fa fa-bars"></i>
         </span>
         <div class="brand"><a href="#">Code with Us</a></div>
         <ul class="main-nav" id="js-menu">
           <li><a href="./index.html">Home</a></li>
-          <li><a href="./team.html">Team</a></li>
+          <li><a href="#section4">Team</a></li>
+          <li><a href="#section6">Mentors</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#aboutus">About</a></li>
           <li><a href="#contactus">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
     </header>
     <div class="showcase" id="home">
       <div class="container">
@@ -41,8 +42,62 @@
       </div>
     </div>
 
+    <section id="section6">
+      <h2>Mentors</h2>
+      <div id="mentors-container" class="row mentors-container">
+        <div class="image">
+          <img
+            class="image__img"
+            src="https://avatars.githubusercontent.com/kumarmanish03"
+            onerror="this.src=customUrl"
+          />
+          <div class="image__overlay image__overlay_blur">
+            <div class="image__title text-center">Manish Kumar</div>
+            <div class="image__description">
+              <p class="text-center">
+                Hey, I am a 2nd Undergraduate at IIIT Allahabad. I love to learn
+                Web Development
+              </p>
+            </div>
+            <div class="links_par">
+              <a href="https://github.com/kumarmanish03">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100009172781875">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            class="image__img"
+            src="https://avatars.githubusercontent.com/kundanb"
+            onerror="this.src=customUrl"
+          />
+          <div class="image__overlay image__overlay_blur">
+            <div class="image__title text-center">Kundan Bhasin</div>
+            <div class="image__description">
+              <p class="text-center">
+                I am a self-taught programmer intending to serve in Web
+                Application Development
+              </p>
+            </div>
+            <div class="links_par">
+              <a href="https://github.com/kundanb">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.facebook.com/kundan.bhasin.11">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="section4">
-      <h1>participants</h1>
+      <h1>Team</h1>
       <div id="participants-container" class="row participants-container">
         <!-- participants rendered from main.js -->
       </div>

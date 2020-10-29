@@ -23,6 +23,17 @@
   display: none;
 }
 
+#getStartBtn{
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 html {
   scroll-behavior: smooth;
 }

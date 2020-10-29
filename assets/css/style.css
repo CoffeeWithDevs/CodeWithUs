@@ -167,8 +167,28 @@ header {
 
 .secHead p {
   font-size: 20px;
+  margin-bottom: 30px;
 }
+.Showcase_button{
+  font-size: 20px ;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 7px 10px 7px 10px;
+  background-color: white;
+  margin: 10px 10px;
+  margin-left: 0;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-weight: bold;
 
+}
+.Showcase_button:hover{
+  color: white;
+  background-color: rgb(54, 54, 54);
+  border: 2px solid white;
+
+}
 .about {
   width: 100%;
   height: 60vh;

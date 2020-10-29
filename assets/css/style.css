@@ -40,6 +40,10 @@ header {
   margin: auto;
 }
 
+.container-FullHeight {
+  height: 100%;
+}
+
 .brand {
   font-family: "Oleo Script", cursive;
   font-size: 35px;
@@ -188,6 +192,10 @@ header {
 
 /* profile CSS */
 
+.profile {
+  height: 96vh;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
@@ -199,6 +207,131 @@ header {
 #about {
   color: grey;
   font-size: 18px;
+}
+
+.profile__details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__picture {
+  box-shadow: 0 3px 26px rgba(32, 32, 32, .5);
+  border: 10px solid #fff;
+  height: 460px;
+  width: 310px;
+}
+
+#userImg {
+  height: 460px;
+  width: 310px;
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#name {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+#about {
+  font-size: 1.6rem;
+  max-width: 780px;
+}
+
+.profile__icons {
+  font-size: 3rem;
+}
+
+.profile__icons i {
+  color: #000
+}
+
+@media(max-width: 768px) {
+  .profile__details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile__picture {
+    height: 260px;
+    width: 185px;
+  }
+
+  .profile__info {
+    align-items: center;
+  }
+
+  #userImg {
+    height: 260px;
+    width: 185px;
+  }
+
+  #name {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #about {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .profile__icons {
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width: 320px) {
+  .profile__picture {
+    height: 230px;
+    width: 155px;
+  }
+
+  #userImg {
+    height: 230px;
+    width: 155px;
+  }
+
+  #name {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #about {
+    font-size: 0.8rem;
+    text-align: center;
+
+  }
+
+  .profile__icons {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 1054px) {
+  #name {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  #about {
+    font-size: 1.4rem;
+  }
 }
 
 /* profile css */
@@ -215,7 +348,7 @@ header {
   box-shadow: 0 0 20px 0 #555;
 }
 
-.wrapper > * {
+.wrapper>* {
   padding: 1em;
 }
 
@@ -392,8 +525,6 @@ footer {
 .footer-distributed .footer-center p a {
   color: #54d16b;
   text-decoration: none;
-  display:block;
-  line-height: 1.5;
 }
 
 /* Footer Right */
@@ -442,6 +573,7 @@ footer {
 /* Here is the code for Responsive Footer */
 
 @media (max-width: 880px) {
+
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
@@ -482,6 +614,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+
 .participants-container {
   display: flex;
   flex-wrap: wrap;
@@ -489,6 +622,7 @@ footer {
   justify-content: center;
   margin: auto;
 }
+
 .image {
   position: relative;
   width: 270px;
@@ -496,12 +630,14 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 .image__img {
   display: block;
   width: 225px;
   height: 225px;
   border-radius: 13px;
 }
+
 .image__overlay {
   position: absolute;
   top: 0;
@@ -517,38 +653,48 @@ footer {
   transition: 0.25s;
   border-radius: 13px;
 }
+
 .image__overlay_blur {
   backdrop-filter: blur(5px);
 }
-.image__overlay > * {
+
+.image__overlay>* {
   transform: translateY(20px);
   transition: 0.25s;
   margin: 8px;
 }
+
 .links_par {
   margin: 4px auto;
   padding: 4px;
 }
+
 .links_par a i {
   font-size: 40px;
   color: #2af598;
   margin: 4px 15px;
 }
+
 .fa-github:hover {
   color: red;
 }
+
 .fa-user:hover {
   color: blue;
 }
+
 .fa-facebook:hover {
   color: yellow;
 }
+
 .image__overlay:hover {
   opacity: 1;
 }
-.image__overlay:hover > * {
+
+.image__overlay:hover>* {
   transform: translateY(0);
 }
+
 .image__title {
   font-size: 1.3em;
   font-weight: bold;
@@ -557,10 +703,12 @@ footer {
   margin: 1px;
   margin-bottom: -5px;
 }
+
 .image__description {
   margin: 0px;
   padding: 2px;
 }
+
 .image__description p {
   font-size: 1rem;
   display: flex;
@@ -593,4 +741,5 @@ footer {
   justify-content: center;
   margin: auto;
 }
+
 /* Mentors Section Ends */

@@ -7,6 +7,22 @@
   padding: 0;
 }
 
+#scrollUpBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  z-index: 9999;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(8, 96, 196);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }

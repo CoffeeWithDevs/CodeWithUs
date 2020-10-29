@@ -5,6 +5,23 @@ navBarToggle.addEventListener("click", function () {
   mainNav.classList.toggle("active");
 });
 
+var scrollUpBtn = document.getElementById("scrollUpBtn");
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollUpBtn.style.display = "block";
+  } else {
+    scrollUpBtn.style.display = "none";
+  }
+}
+
+function ScrollUp() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 //code for fetching participants from json files in contributionsfolder
 
 const githubApiUrl =

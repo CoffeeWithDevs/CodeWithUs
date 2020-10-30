@@ -22,77 +22,6 @@ navBarToggle.addEventListener("click", function () {
 
 //code for fetching participants from json files in contributionsfolder
 
-// const githubApiUrl =
-//   "https://api.github.com/repos/CoffeeWithDevs/CodeWithUs/commits/main";
-// const participantBaseUrl =
-//   "https://coffeewithdevs.github.io/CodeWithUs/contributions/";
-// const participantProfile =
-//   "https://coffeewithdevs.github.io/CodeWithUs/profile.html?username=";
-// const participantsContainer = document.getElementById("participants-container");
-
-// fetch(githubApiUrl)
-//   .then((res) => res.json())
-//   .then((data) => {
-//     // console.log(data);
-
-//     const treeUrl = data.commit.tree.url;
-
-//     fetch(treeUrl)
-//       .then((treeRes) => treeRes.json())
-//       .then((treeData) => {
-//         // console.log(treeData);
-//         const contributionsUrl = treeData.tree[2].url;
-//         fetch(contributionsUrl)
-//           .then((contributionsRes) => contributionsRes.json())
-//           .then((contributionsData) => {
-//             // console.log(contributionsData);
-//             let participants = contributionsData.tree.map(
-//               (contributor) => contributor.path
-//             );
-//             participants.forEach((participant) => {
-//               const participantUsername = participant.substring(
-//                 0,
-//                 participant.length - 5
-//               );
-//               fetch(`${participantBaseUrl + participant}`)
-//                 .then((res) => res.json())
-//                 .then((data) => {
-//                   //code for rendering participants in partcipants-container
-//                   //participant image is available as data.imageurl
-//                   x =
-//                     '<div class="image"><img class="image__img" src="' +
-//                     data.imageurl +
-//                     '" onerror="this.src=' +
-//                     "customUrl" +
-//                     '"><div class="image__overlay image__overlay_blur"><div class="image__title text-center">' +
-//                     data.name;
-//                   x =
-//                     x +
-//                     '</div><div class="image__description"><p id="parag" class="text-center">';
-//                   g = data.about;
-//                   g = truncate(g);
-//                   x = x + g;
-//                   x =
-//                     x +
-//                     '</p></div><div class="links_par"><a  href="' +
-//                     data.github +
-//                     '"><i class="fab fa-github"></i></a><a  href="' +
-//                     participantProfile +
-//                     participantUsername +
-//                     '"><i class="fa fa-user"></i></a><a href="' +
-//                     data.facebook +
-//                     '"><i class="fab fa-facebook"></i></a><div></div></div>';
-//                   participantsContainer.innerHTML += x;
-//                 })
-//                 .catch((err) => console.log(participant + ": " + err));
-//             });
-//           })
-//           .catch((err) => console.log(err));
-//       })
-//       .catch((err) => console.log(err));
-//   })
-//   .catch((err) => console.log(err));
-
 const participantProfile =
   "https://coffeewithdevs.github.io/CodeWithUs/profile.html?username=";
 const participantsContainer = document.getElementById("participants-container");
@@ -101,13 +30,10 @@ const participantProfilesystem = "/profile.html?username=";
 fetch("https://api.github.com/repos/CoffeeWithDevs/CodeWithUs/contributors")
   .then((res) => res.json())
   .then((res) => {
-    console.log(res);
     res.forEach((user) => {
-      console.log(user.login, user.avatar_url, user.html_url);
       fetch(user.url)
         .then((res) => res.json())
         .then((res) => {
-          console.log(res.name, res.bio, res.location);
           {
             //code for rendering participants in partcipants-container
             //participant image is available as data.imageurl
@@ -141,7 +67,6 @@ fetch("https://api.github.com/repos/CoffeeWithDevs/CodeWithUs/contributors")
   });
 
 function truncate(usertext) {
-  console.log(typeof usertext);
   var n = usertext.length;
   var c = 0;
   for (i = 0; i < n; i++) {

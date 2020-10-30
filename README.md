@@ -8,6 +8,12 @@ _We believe in contributing. Let's learn, grow and innovate together._
 
 Do have a look at our Live Site. Visit https://coffeewithdevs.github.io/CodeWithUs/
 
+<p align="center">
+
+<img src="https://visitor-badge.laobi.icu/badge?page_id=CoffeeWithDevs.CodeWithUs" />
+
+</p>
+
 ## About Us
 
 We are a leading Open Source Organisation helping University Students to grow in their programming career. We focus upon building the technical as well as the non-technical skills, which would help students make better community.
@@ -37,9 +43,5 @@ We are a leading Open Source Organisation helping University Students to grow in
 
 **Also feel free to mail us at manish15052000@gmail.com or kundanbhasin11062000@gmail.com**
 
-<p align="center">
 
-<img src="https://visitor-badge.laobi.icu/badge?page_id=CoffeeWithDevs.CodeWithUs" />
-
-</p>
 

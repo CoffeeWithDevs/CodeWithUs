@@ -389,11 +389,12 @@ header {
 
 .company-info {
   text-align: center;
-  background: #555;
+  background: rgb(73, 73, 73);
 }
 
 .contact {
   background: #fff;
+  color: #000 !important;
 }
 
 .contact form {
@@ -879,6 +880,6 @@ input:checked + .slider:before {
   margin-right: 20px;
 }
 .dark-mode {
-  background-color: black;
+  background: linear-gradient(315deg, #555 50%, #2f2f2f 50%);
   color: white;
 }

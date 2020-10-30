@@ -1,6 +1,6 @@
 /* index CSS */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Raleway&display=swap");
 
 * {
@@ -120,13 +120,13 @@ header {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #F7EBE9 url("../img/loader4.gif") no-repeat center;
+  background: #fff url("../img/loader1.gif") no-repeat center;
   z-index: 999;
 }
 
 #content {
   display: none;
-  transition: #F7EBE9 1s ease-out;
+  transition: #f7ebe9 1s ease-out;
 }
 
 @media screen and (min-width: 900px) {
@@ -183,8 +183,8 @@ header {
   font-size: 20px;
   margin-bottom: 30px;
 }
-.Showcase_button{
-  font-size: 20px ;
+.Showcase_button {
+  font-size: 20px;
   display: inline-block;
   color: black;
   text-align: center;
@@ -195,13 +195,11 @@ header {
   border-radius: 10px;
   border: 2px solid black;
   font-weight: bold;
-
 }
-.Showcase_button:hover{
+.Showcase_button:hover {
   color: white;
   background-color: rgb(54, 54, 54);
   border: 2px solid white;
-
 }
 .about {
   width: 100%;
@@ -253,7 +251,7 @@ header {
 }
 
 .profile__picture {
-  box-shadow: 0 3px 26px rgba(32, 32, 32, .5);
+  box-shadow: 0 3px 26px rgba(32, 32, 32, 0.5);
   border: 10px solid #fff;
   height: 460px;
   width: 310px;
@@ -289,10 +287,10 @@ header {
 }
 
 .profile__icons i {
-  color: #000
+  color: #000;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .profile__details {
     flex-direction: column;
     justify-content: center;
@@ -329,7 +327,7 @@ header {
   }
 }
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
   .profile__picture {
     height: 230px;
     width: 155px;
@@ -349,7 +347,6 @@ header {
   #about {
     font-size: 0.8rem;
     text-align: center;
-
   }
 
   .profile__icons {
@@ -357,7 +354,7 @@ header {
   }
 }
 
-@media(max-width: 1054px) {
+@media (max-width: 1054px) {
   #name {
     font-size: 3rem;
     margin-bottom: 10px;
@@ -382,7 +379,7 @@ header {
   box-shadow: 0 0 20px 0 #555;
 }
 
-.wrapper>* {
+.wrapper > * {
   padding: 1em;
 }
 
@@ -607,7 +604,6 @@ footer {
 /* Here is the code for Responsive Footer */
 
 @media (max-width: 880px) {
-
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
@@ -692,7 +688,7 @@ footer {
   backdrop-filter: blur(5px);
 }
 
-.image__overlay>* {
+.image__overlay > * {
   transform: translateY(20px);
   transition: 0.25s;
   margin: 8px;
@@ -725,7 +721,7 @@ footer {
   opacity: 1;
 }
 
-.image__overlay:hover>* {
+.image__overlay:hover > * {
   transform: translateY(0);
 }
 
@@ -783,7 +779,7 @@ footer {
 /**********************/
 #button {
   display: inline-block;
-  background-color: #FF9800;
+  background-color: #ff9800;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -791,7 +787,7 @@ footer {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;

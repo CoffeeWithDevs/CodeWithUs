@@ -13,7 +13,6 @@ function init() {
 
 init();
 
-
 let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById("js-navbar-toggle");
 
@@ -110,4 +109,9 @@ function truncate(usertext) {
     usertext = temText;
   }
   return usertext;
+}
+
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }

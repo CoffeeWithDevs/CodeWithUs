@@ -9,25 +9,27 @@ const fbLink = document.getElementById("fbLink");
 const gitLink = document.getElementById("gitLink");
 let title = document.getElementById("title");
 
-fetch(
-  "https://coffeewithdevs.github.io/CodeWithUs/contributions/" +
-    username +
-    ".json"
-)
-  .then((res) => res.text())
+fetch("https://api.github.com/repos/CoffeeWithDevs/CodeWithUs/contributors")
+  .then((res) => res.json())
   .then((res) => getDetails(res))
   .catch((err) => {
     console.log(err);
   });
 
 function getDetails(data) {
-  var obj = JSON.parse(data);
-  name.innerHTML = obj.name;
-  about.innerHTML = obj.about;
-  image.src = obj.imageurl;
-  fbLink.href = obj.facebook;
-  gitLink.href = obj.github;
+  const user = data.find((user) => user.login == username);
+  fetch(user.url)
+    .then((res) => res.json())
+    .then((res) => {
+      name.innerHTML = res.name;
+      about.innerHTML = res.bio =
+        res.bio == null
+          ? "I'm a Programmer and Open source contributor"
+          : res.bio;
+      image.src = user.avatar_url;
+      gitLink.href = user.html_url;
 
-  document.getElementById("demo").innerHTML = text;
-  title.innerHTML = name.innerHTML + " | Code With Us";
+      document.getElementById("demo").innerHTML = text;
+      title.innerHTML = name.innerHTML + " | Code With Us";
+    });
 }

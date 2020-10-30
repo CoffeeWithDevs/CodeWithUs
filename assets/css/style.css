@@ -6,10 +6,12 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-y: overlay;
 }
 
 a {
@@ -37,8 +39,9 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: auto;
   width: 100%;
-  padding: 5px 0;
+  padding: 5px 9px;
   z-index: 999;
+  left: 0em;
 }
 
 .container {
@@ -55,13 +58,7 @@ header {
   font-size: 35px;
   cursor: pointer;
   display: inline-block;
-  margin-left: 2%;
-  margin-top: 1%;
-  width: 23%;
-}
-.brand img{
-  max-height: 100%;
-  max-width: 100%;
+  margin-left: 50px;
 }
 .brand a {
   color: black;
@@ -104,7 +101,7 @@ header {
   padding: 8px;
   background-color: #555;
   color: white !important;
-  margin: 1%;
+  margin: 10px 10px;
   border-radius: 20px;
   font-weight: bold;
 }
@@ -148,10 +145,9 @@ header {
 
   .main-nav {
     display: flex;
-    margin-right: 1%;
+    margin-right: 30px;
     flex-direction: row;
     justify-content: flex-end;
-    width: 65%;
   }
 
   .nav-links {
@@ -815,15 +811,18 @@ footer {
   opacity: 1;
   visibility: visible;
 }
-#js-menu{
+ul#js-menu.main-nav.active{
   width: 97%;
 }
-@media screen and (max-width: 889px){
+@media screen and (max-width: 400px){
   .brand{
+    margin-left: 2%;
     width: 80%;
   }
+  .brand img{
+    width: 100%;
+  }
 }
-
 @media screen and (max-width: 550px) and (max-height: 850px) {
   .secHead {
     width: 90%;

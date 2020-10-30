@@ -20,6 +20,11 @@ ul {
   list-style: none;
 }
 
+.secHead h2 {
+  font-weight: 100;
+  font-size: 20px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
@@ -162,7 +167,7 @@ header {
 }
 
 .showcase {
-  background: url(../img/showcase1.jpg) no-repeat center/cover;
+  background: #111 url(../img/showcase1.jpg) no-repeat center/cover;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -190,16 +195,14 @@ header {
   text-align: center;
   padding: 7px 10px 7px 10px;
   background-color: white;
-  margin: 10px 10px;
+  margin: 20px 10px;
   margin-left: 0;
   border-radius: 10px;
-  border: 2px solid black;
   font-weight: bold;
 }
 .Showcase_button:hover {
   color: white;
   background-color: rgb(54, 54, 54);
-  border: 2px solid white;
 }
 .about {
   width: 100%;
@@ -779,7 +782,7 @@ footer {
 /**********************/
 #button {
   display: inline-block;
-  background-color: #ff9800;
+  background-color: #777;
   width: 50px;
   height: 50px;
   text-align: center;

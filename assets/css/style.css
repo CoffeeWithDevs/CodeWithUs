@@ -32,6 +32,24 @@ body {
   line-height: 1.6;
   font-size: 16px;
 }
+::-webkit-scrollbar {
+  width: 1.2em;
+  position: absolute;
+
+}
+::-webkit-scrollbar-track {
+  background:transparent;
+  display: none; 
+}
+
+::-webkit-scrollbar-thumb{
+  background: #2e2f38;
+  border: 4px solid #666666;
+  border-radius:3px ;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(240, 234, 234);
+}
 
 header {
   position: fixed;

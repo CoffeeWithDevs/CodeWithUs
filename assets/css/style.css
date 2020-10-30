@@ -49,9 +49,13 @@ header {
   font-size: 35px;
   cursor: pointer;
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 3%;
+  width: 25%;
 }
-
+.brand img{
+  max-width: 100%;
+  max-height: 100%;
+}
 .brand a {
   color: black;
 }
@@ -93,7 +97,7 @@ header {
   padding: 8px;
   background-color: #555;
   color: white !important;
-  margin: 10px 10px;
+  margin: 1%;
   border-radius: 20px;
   font-weight: bold;
 }
@@ -121,14 +125,13 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-
   .main-nav {
     display: flex;
-    margin-right: 30px;
+    margin-right: 1%;
     flex-direction: row;
     justify-content: flex-end;
+    width: 65%;
   }
-
   .nav-links {
     margin-left: 40px;
   }
@@ -149,13 +152,13 @@ header {
 
 .showcase {
   background: url(../img/showcase1.jpg) no-repeat center/cover;
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
 .secHead {
-  margin-top: 200px;
+  margin-top: 22%;
   color: white;
   width: 50%;
 }
@@ -176,7 +179,6 @@ header {
   text-align: center;
   padding: 7px 10px 7px 10px;
   background-color: white;
-  margin: 10px 10px;
   margin-left: 0;
   border-radius: 10px;
   border: 2px solid black;
@@ -191,7 +193,7 @@ header {
 }
 .about {
   width: 100%;
-  height: 60vh;
+  margin: 10px;
   padding-top: 50px;
 }
 
@@ -444,15 +446,14 @@ p {
 /* footer  */
 
 footer {
-  position: fixed;
   bottom: 0;
 }
-
 @media (max-height: 800px) {
   footer {
     position: static;
   }
 }
+
 
 .footer-distributed {
   background-color: #2f2f2f;
@@ -797,4 +798,28 @@ footer {
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+
+@media screen and (max-width: 889px){
+  .brand{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) and (max-height: 850px) {
+  .secHead {
+    width: 90%;
+    margin-top: 40%;
+  }
+
+  .secHead p {
+    font-size: 15px;
+  }
+
+  .secHead h1 {
+    font-size: 30px;
+  }
+  .about p{
+    font-size: 14px;
+  }
 }

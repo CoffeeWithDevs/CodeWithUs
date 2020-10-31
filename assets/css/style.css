@@ -7,12 +7,10 @@
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
   overflow-y: overlay;
 }
-
 a {
   text-decoration: none;
 }
@@ -56,10 +54,8 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: auto;
   width: 100%;
-  padding: 5px 9px;
   z-index: 999;
   left: 0em;
-
 }
 
 .container {
@@ -78,7 +74,6 @@ header {
   display: inline-block;
   margin-left: 50px;
 }
-
 .brand a {
   color: black;
 }
@@ -194,7 +189,7 @@ header {
 }
 
 .secHead {
-  margin-top: 200px;
+  margin-top: 22%;
   color: white;
   width: 50%;
 }
@@ -225,8 +220,7 @@ header {
   background-color: rgb(54, 54, 54);
 }
 .about {
-  width: 100%;
-  height: 60vh;
+  margin: 10px 10px 30px 10px;
   padding-top: 50px;
 }
 
@@ -238,7 +232,6 @@ header {
 
 .about p {
   font-size: 20px;
-  width: 70%;
   margin: auto;
   text-align: center;
 }
@@ -477,7 +470,6 @@ p {
 /* footer  */
 
 footer {
-  position: fixed;
   bottom: 0;
 }
 
@@ -829,4 +821,33 @@ footer {
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+ul#js-menu.main-nav.active{
+  width: 97%;
+}
+@media screen and (max-width: 400px){
+  .brand{
+    margin-left: 2%;
+    width: 70%;
+  }
+  .brand img{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) and (max-height: 850px) {
+  .secHead {
+    width: 90%;
+    margin-top: 40%;
+  }
+
+  .secHead h2 {
+    font-size: 15px;
+  }
+
+  .secHead h1 {
+    font-size: 30px;
+  }
+  .about h2{
+    font-size: 14px;
+  }
 }

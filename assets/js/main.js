@@ -35,6 +35,7 @@ fetch("https://api.github.com/repos/CoffeeWithDevs/CodeWithUs/contributors")
         .then((res) => res.json())
         .then((res) => {
           {
+            const name = res.name == null ? user.login : res.name;
             //code for rendering participants in partcipants-container
             //participant image is available as data.imageurl
             x =
@@ -43,7 +44,7 @@ fetch("https://api.github.com/repos/CoffeeWithDevs/CodeWithUs/contributors")
               '" onerror="this.src=' +
               "customUrl" +
               '"><div class="image__overlay image__overlay_blur"><div class="image__title text-center">' +
-              res.name;
+              name;
             x =
               x +
               '</div><div class="image__description"><p id="parag" class="text-center">';

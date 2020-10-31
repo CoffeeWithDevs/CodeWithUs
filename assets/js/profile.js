@@ -21,7 +21,8 @@ function getDetails(data) {
   fetch(user.url)
     .then((res) => res.json())
     .then((res) => {
-      name.innerHTML = res.name;
+      const name1 = res.name == null ? user.login : res.name;
+      name.innerHTML = name1;
       about.innerHTML = res.bio =
         res.bio == null
           ? "I'm a Programmer and Open source contributor"

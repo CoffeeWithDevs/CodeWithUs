@@ -146,7 +146,7 @@ header {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #fff url("../img/loader1.gif") no-repeat center;
+  background: #f7ebe9 url("../img/loader4.gif") no-repeat center;
   z-index: 999;
 }
 
@@ -224,6 +224,7 @@ header {
 .Showcase_button:hover {
   color: white;
   background-color: rgb(54, 54, 54);
+  border: 2px solid white;
 }
 .about {
   width: 100%;
@@ -409,11 +410,12 @@ header {
 
 .company-info {
   text-align: center;
-  background: #555;
+  background: rgb(73, 73, 73);
 }
 
 .contact {
   background: #fff;
+  color: #000 !important;
 }
 
 .contact form {
@@ -803,7 +805,7 @@ footer {
 /**********************/
 #button {
   display: inline-block;
-  background-color: #777;
+  background-color: #ff9800;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -831,4 +833,74 @@ footer {
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-div {
+  float: right;
+  margin-top: 90px;
+  margin-right: 20px;
+}
+.dark-mode {
+  background: linear-gradient(315deg, #555 50%, #2f2f2f 50%);
+  color: white;
 }

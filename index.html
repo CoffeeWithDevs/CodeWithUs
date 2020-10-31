@@ -32,10 +32,16 @@
         </nav>
       </header>
       <div class="showcase" id="home">
+        <div class="switch-div">
+          <label class="switch">
+            <input type="checkbox" />
+            <span onclick="darkMode()" class="slider round"></span>
+          </label>
+        </div>
         <div class="container">
           <div class="secHead">
             <h1>Code With Us</h1>
-            <h2>
+            <p>
               Code with Us is an Organisation for university students who want
               to bring about a change through technology. We are focused upon
               building technical and non-technical skills, which would help
@@ -167,15 +173,16 @@
         </div>
       </div>
 
-      <div class="contact" id="contactus">
+      <div id="contactus">
         <div class="container">
           <h1>Contact Us</h1>
+          <div class="company-info">
+            <h3>Coffee with Devs</h3>
+          </div>
           <div class="wrapper animated zoomIn">
             <!-- class = "animated bounceInLeft" -->
-            <div class="company-info">
-              <h3>Coffee with Devs</h3>
-            </div>
             <div class="contact">
+              
               <h3>Email Us</h3>
               <form id="contactform">
                 <p>

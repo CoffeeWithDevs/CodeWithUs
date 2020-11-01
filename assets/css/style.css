@@ -58,19 +58,19 @@ header {
 }
 
 .main-nav a {
-  display: inline-block;
   color: white;
+  display: inline-block;
   width: 80px;
   text-align: center;
 }
 
 .main-nav li:hover {
-  color: #555 !important;
   background-color: white;
+  cursor: pointer;
   border: 1px solid black;
 }
 
-.main-nav a:hover {
+.main-nav li:hover a {
   color: #555;
 }
 
@@ -88,7 +88,7 @@ header {
   text-align: center;
   padding: 8px;
   background-color: #555;
-  color: white !important;
+  border: 1px solid #555;
   margin: 10px 10px;
   border-radius: 20px;
   font-weight: bold;

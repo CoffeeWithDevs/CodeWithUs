@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="title"></title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fa fa-bars"></i>
-        </span>
-        <div class="brand"><a href="#">Code with Us</a></div>
-        <ul class="main-nav" id="js-menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./team.html">Team</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#aboutus">About</a></li>
-          <li><a href="#contactus">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="title"></title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars"></i>
+      </span>
+      <div class="brand"><a href="#">Code with Us</a></div>
+      <ul class="main-nav" id="js-menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./team.html">Team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#aboutus">About</a></li>
+        <li><a href="#contactus">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="profile">
+    <div class="container container-FullHeight">
       <br />
-      <div class="card">
-        <img id="userImg" src="" alt="" style="width: 100%" />
-        <h1 id="name"></h1>
-        <p id="about"></p>
-        <p id="demo"></p>
-        <div style="margin: 20px 0">
-          <a id="fbLink" href=""><i class="fab fa-facebook"></i></a>
-          <a id="gitLink" href=""><i class="fab fa-github"></i></a>
+      <div class="profile__details">
+        <div class="profile__picture">
+          <img id="userImg" src="" alt="" />
+        </div>
+        <div class="profile__info">
+          <h1 id="name"></h1>
+          <p id="about"></p>
+          <p id="demo"></p>
+          <div class="profile__icons" style="margin: 20px 0">
+            <a id="fbLink" href=""><i class="fab fa-facebook"></i></a>
+            <a id="gitLink" href=""><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
     </div>
-    <br />
+  </div>
+  <br />
 
-    <script src="assets/js/profile.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </body>
+  <script src="assets/js/profile.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
 </html>

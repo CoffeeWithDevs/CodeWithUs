@@ -6,217 +6,268 @@
     <title>Code With Us</title>
     <link rel="icon" href="./logo/icon.png" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://kit.fontawesome.com/3e6ea9dfab.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fa fa-bars"></i>
-        </span>
-        <div class="brand"><img src="./logo/logo.png" height="48" /></div>
-        <ul class="main-nav" id="js-menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#section4">Team</a></li>
-          <li><a href="#section6">Mentors</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#aboutus">About</a></li>
-          <li><a href="#contactus">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="showcase" id="home">
-      <div class="container">
-        <div class="secHead">
-          <h1>Code With Us</h1>
+    <div id="loader"></div>
+    <div id="content">
+      <header>
+        <nav class="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+          </span>
+          <div class="brand"><img src="./logo/logo.svg" height="48" /></div>
+          <ul class="main-nav" id="js-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#section4">Team</a></li>
+            <li><a href="#section6">Mentors</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#aboutus">About</a></li>
+            <li><a href="#contactus">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="showcase" id="home">
+        <div class="container">
+          <div class="secHead">
+            <h1>Code With Us</h1>
+            <h2>
+              Code with Us is an Organisation for university students who want
+              to bring about a change through technology. We are focused upon
+              building technical and non-technical skills, which would help
+              students to build a better community.<br /><strong>
+                # Lets Learn, Grow and Innovate together</strong
+              >
+            </h2>
+          </div>
+          <a
+            href="https://github.com/CoffeeWithDevs/CodeWithUs/"
+            class="Showcase_button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GET STARTED</a
+          >
+        </div>
+      </div>
+
+      <section id="section6">
+        <h2>Mentors</h2>
+        <div id="mentors-container" class="row mentors-container">
+          <div class="image">
+            <img
+              class="image__img"
+              src="https://avatars.githubusercontent.com/kumarmanish03"
+              onerror="this.src=customUrl"
+            />
+            <div class="image__overlay image__overlay_blur">
+              <div class="image__title text-center">Manish Kumar</div>
+              <div class="image__description">
+                <p class="text-center">
+                  Hey, I am a 2nd-Year Undergraduate at IIIT Allahabad. I love
+                  to learn Web Development
+                </p>
+              </div>
+              <div class="links_par">
+                <a href="https://github.com/kumarmanish03">
+                  <i class="fab fa-github"></i>
+                </a>
+                <!-- <a
+                href="https://coffeewithdevs.github.io/CodeWithUs/profile.html?username=kumarmanish03"
+                ><i class="fa fa-user"></i
+              ></a> -->
+                <a
+                  href="https://www.facebook.com/profile.php?id=100009172781875"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <img
+              class="image__img"
+              src="https://avatars.githubusercontent.com/kundanb"
+              onerror="this.src=customUrl"
+            />
+            <div class="image__overlay image__overlay_blur">
+              <div class="image__title text-center">Kundan Bhasin</div>
+              <div class="image__description">
+                <p class="text-center">
+                  I am a self-taught programmer intending to serve in Web
+                  Application Development
+                </p>
+              </div>
+              <div class="links_par">
+                <a href="https://github.com/kundanb">
+                  <i class="fab fa-github"></i>
+                </a>
+                <!-- <a
+                href="https://coffeewithdevs.github.io/CodeWithUs/profile.html?username=kundanb"
+                ><i class="fa fa-user"></i
+              ></a> -->
+                <a href="https://www.facebook.com/kundan.bhasin.11">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <img
+              class="image__img"
+              src="https://avatars.githubusercontent.com/geeks5551"
+              onerror="this.src=customUrl"
+            />
+            <div class="image__overlay image__overlay_blur">
+              <div class="image__title text-center">Shivam Agrahari</div>
+              <div class="image__description">
+                <p class="text-center">
+                  Full Stack Web developer And Tech Enthusiast :)
+                </p>
+              </div>
+              <div class="links_par">
+                <a href="https://github.com/geeks5551">
+                  <i class="fab fa-github"></i>
+                </a>
+                <!-- <a
+                href="https://coffeewithdevs.github.io/CodeWithUs/profile.html?username=geeks5551"
+                ><i class="fa fa-user"></i
+              ></a> -->
+                <a
+                  href="https://www.facebook.com/profile.php?id=100042424777755"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section4">
+        <h1>Team</h1>
+        <div id="participants-container" class="row participants-container">
+          <!-- participants rendered from main.js -->
+        </div>
+      </section>
+
+      <div class="about" id="aboutus">
+        <div class="container">
+          <h1>About Us</h1>
           <p>
+            Code with US is an Organisation for university students who
+            Collaboratively wants to bring about a change through technology. We
+            Believe In Contributing Towards The Betterment Of Society Through
+            Technology . Anyone is welcome here for contributing and to learn
+            Open Source
+          </p>
+        </div>
+      </div>
+
+      <div class="contact" id="contactus">
+        <div class="container">
+          <h1>Contact Us</h1>
+          <div class="wrapper animated zoomIn">
+            <!-- class = "animated bounceInLeft" -->
+            <div class="company-info">
+              <h3>Coffee with Devs</h3>
+            </div>
+            <div class="contact">
+              <h3>Email Us</h3>
+              <form id="contactform">
+                <p>
+                  <label>Name</label>
+                  <input type="text" name="name" id="name" />
+                </p>
+                <p>
+                  <label>Company</label>
+                  <input type="text" name="company" id="company" />
+                </p>
+                <p>
+                  <label>Email Address</label>
+                  <input type="email" name="email" id="email" />
+                </p>
+                <p>
+                  <label>Phone Nmber</label>
+                  <input type="text" name="phoneNumber" id="phone" />
+                </p>
+                <p class="full">
+                  <label>Message</label>
+                  <textarea name="message" rows="5" id="message"></textarea>
+                </p>
+                <p class="full">
+                  <button type="submit">Submit</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3><span>Code with Us</span></h3>
+
+          <p class="footer-links">
+            <a href="#home">Home</a>
+            |
+            <a href="#section4">Team</a>
+            |
+            <a href="#aboutus">About</a>
+            |
+            <a href="#contactus">Contact</a>
+          </p>
+
+          <p class="footer-company-name">© 2020 Code With Us.</p>
+        </div>
+
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p>
+              <span>Ghaziabad, India</span>
+              <!--Add your location here-->
+            </p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 XXXXXXXXXX</p>
+            <!--Add your contact number-->
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+              <a href="mailto:kundanbhasin11062000@gmail.com"
+                >Kundan Bhasin |</a
+              >
+              <a href="mailto:manish15052000@gmail.com">Manish Kumar</a>
+            </p>
+            <!--Add You MailID after mailto:-->
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
             Code with Us is an Organisation for university students who want to
-            bring about a change through technology. We are focused upon
-            building technical and non-technical skills, which would help
-            students to build a better community.<br /><strong
-              ># Lets Learn, Grow and Innovate together.</strong
-            >
+            bring about a change through technology.
           </p>
+          <div class="footer-icons">
+            <a href="/"><i class="fab fa-facebook"></i></a>
+            <!--Add Social Links Here-->
+            <a href="/"><i class="fab fa-instagram"></i></a>
+            <a href="/"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
-      </div>
+      </footer>
+
+      <a id="button"><i class="fas fa-chevron-up"></i></a>
     </div>
-
-    <section id="section6">
-      <h2>Mentors</h2>
-      <div id="mentors-container" class="row mentors-container">
-        <div class="image">
-          <img
-            class="image__img"
-            src="https://avatars.githubusercontent.com/kumarmanish03"
-            onerror="this.src=customUrl"
-          />
-          <div class="image__overlay image__overlay_blur">
-            <div class="image__title text-center">Manish Kumar</div>
-            <div class="image__description">
-              <p class="text-center">
-                Hey, I am a 2nd Undergraduate at IIIT Allahabad. I love to learn
-                Web Development
-              </p>
-            </div>
-            <div class="links_par">
-              <a href="https://github.com/kumarmanish03">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=100009172781875">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="image">
-          <img
-            class="image__img"
-            src="https://avatars.githubusercontent.com/kundanb"
-            onerror="this.src=customUrl"
-          />
-          <div class="image__overlay image__overlay_blur">
-            <div class="image__title text-center">Kundan Bhasin</div>
-            <div class="image__description">
-              <p class="text-center">
-                I am a self-taught programmer intending to serve in Web
-                Application Development
-              </p>
-            </div>
-            <div class="links_par">
-              <a href="https://github.com/kundanb">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.facebook.com/kundan.bhasin.11">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="section4">
-      <h1>Team</h1>
-      <div id="participants-container" class="row participants-container">
-        <!-- participants rendered from main.js -->
-      </div>
-    </section>
-
-    <div class="about" id="aboutus">
-      <div class="container">
-        <h1>About Us</h1>
-        <p>
-          Code with US is an Organisation for university students who
-          Collaboratively wants to bring about a change through technology. We
-          Believe In Contributing Towards The Betterment Of Society Through
-          Technology . Anyone is welcome here for contributing and to learn Open
-          Source
-        </p>
-      </div>
-    </div>
-
-    <div class="contact" id="contactus">
-      <div class="container">
-        <h1>Contact Us</h1>
-        <div class="wrapper animated zoomIn">
-          <!-- class = "animated bounceInLeft" -->
-          <div class="company-info">
-            <h3>Coffee with Devs</h3>
-          </div>
-          <div class="contact">
-            <h3>Email Us</h3>
-            <form id="contactform">
-              <p>
-                <label>Name</label>
-                <input type="text" name="name" id="name" />
-              </p>
-              <p>
-                <label>Company</label>
-                <input type="text" name="company" id="company" />
-              </p>
-              <p>
-                <label>Email Address</label>
-                <input type="email" name="email" id="email" />
-              </p>
-              <p>
-                <label>Phone Nmber</label>
-                <input type="text" name="phoneNumber" id="phone" />
-              </p>
-              <p class="full">
-                <label>Message</label>
-                <textarea name="message" rows="5" id="message"></textarea>
-              </p>
-              <p class="full">
-                <button type="submit">Submit</button>
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer-distributed">
-      <div class="footer-left">
-        <h3><span>Code with Us</span></h3>
-
-        <p class="footer-links">
-          <a href="#home">Home</a>
-          |
-          <a href="#section4">Team</a>
-          |
-          <a href="#aboutus">About</a>
-          |
-          <a href="#contactus">Contact</a>
-        </p>
-
-        <p class="footer-company-name">© 2020 Code With Us.</p>
-      </div>
-
-      <div class="footer-center">
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p>
-            <span>Ghaziabad</span>
-            <!--Add your location here-->
-          </p>
-        </div>
-
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>+91 XXXXXXXXXX</p>
-          <!--Add your contact number-->
-        </div>
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p>
-            <a href="mailto:kundanbhasin11062000@gmail.com"
-              >Kundan Bhasin</a
-            >
-            <a href="mailto:manish15052000@gmail.com"
-              >Manish Kumar</a
-            >
-          </p>
-          <!--Add You MailID after mailto:-->
-        </div>
-      </div>
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <span>About the company</span>
-          Code with Us is an Organisation for university students who want to
-          bring about a change through technology.
-        </p>
-        <div class="footer-icons">
-          <a href="/"><i class="fab fa-facebook"></i></a>
-          <!--Add Social Links Here-->
-          <a href="/"><i class="fab fa-instagram"></i></a>
-          <a href="/"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
-    </footer>
-
     <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/scroll-up.js"></script>
   </body>
 </html>

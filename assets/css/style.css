@@ -85,15 +85,16 @@ header {
 }
 
 .main-nav a {
-  display: inline-block;
   color: white;
+  display: inline-block;
   width: 80px;
   text-align: center;
 }
 
 .main-nav li:hover {
   background-color: white;
-  box-shadow: 0 0 0 1px black;
+  cursor: pointer;
+  border: 1px solid black;
 }
 
 .main-nav li:hover a {
@@ -114,7 +115,7 @@ header {
   text-align: center;
   padding: 8px;
   background-color: #555;
-  color: white !important;
+  border: 1px solid #555;
   margin: 10px 10px;
   border-radius: 20px;
   font-weight: bold;

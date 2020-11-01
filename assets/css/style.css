@@ -402,6 +402,7 @@ header {
 .company-info {
   text-align: center;
   background: #555;
+  color: #fff;
 }
 
 .contact {
@@ -426,6 +427,9 @@ p {
   margin: 0px;
 }
 
+.contact form textarea {
+  resize: none;
+}
 .contact form input,
 .contact form textarea,
 .contact form button {
@@ -440,6 +444,10 @@ p {
   border: none;
   padding: 1em;
   text-transform: uppercase;
+}
+
+.contact form button:hover {
+  cursor: pointer;
 }
 
 .contact form button:hover,
